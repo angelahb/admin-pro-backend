@@ -10,7 +10,7 @@ try{
         useCreateIndex: true
     });
 
-    //console.log('DB Online');
+    console.log('DB Online');
 
 }catch(error) {
     console.log(error);
