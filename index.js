@@ -19,6 +19,9 @@ app.use(express.json());
 dbConnection();
 //console.log(process.env);
 
+//Directorio Público
+app.use( express.static('public') );
+
 // Rutas
 app.use( '/api/usuarios', require('./routes/usuarios') );
 app.use( '/api/hospitales', require('./routes/hospitales') );
